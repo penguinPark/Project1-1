@@ -39,7 +39,7 @@ namespace Project1_1
             if (height !=0 && height <= 450)
             {
                 double width = area / height;
-                if(width <= 800 && width > 0)
+                if (width <= 800 && width > 0)
                 {
                     Rectangle.Height = height;
                     Rectangle.Width = width;
