@@ -7,12 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Rectangle x:Name="Rectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="275,160,0,0" 
-                   Stroke="Black" VerticalAlignment="Top" Width="244"/>
-        <TextBox x:Name="heightBox" HorizontalAlignment="Left" Height="23" Margin="93,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="heightBox_TextChanged" PreviewTextInput="heightBox_PreviewTextInput"/>
+        <Rectangle x:Name="Rectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="81" Margin="0,55,0,0" 
+                   Stroke="Black" VerticalAlignment="Top" Width="169"/>
+        <TextBox x:Name="HeightBox" HorizontalAlignment="Left" Height="23" Margin="93,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="HeightBox_TextChanged" PreviewTextInput="HeightBox_PreviewTextInput"/>
         <Label x:Name="Height" Content="Height:" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Width="72" FontSize="16"/>
-        <Label Content="Area:" HorizontalAlignment="Left" Margin="23,66,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="areaBox" HorizontalAlignment="Left" Height="23" Margin="93,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="areaBox_TextChanged" PreviewTextInput="areaBox_PreviewTextInput"/>
+        <Label Content="Area:" HorizontalAlignment="Left" Margin="244,13,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="AreaBox" HorizontalAlignment="Left" Height="23" Margin="314,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged= "AreaBox_TextChanged" PreviewTextInput="AreaBox_PreviewTextInput"/>
+        <Button x:Name="Button" Content="Button" HorizontalAlignment="Left" Margin="480,21,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBlock x:Name="Text1" HorizontalAlignment="Left" Margin="589,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174"/>
 
     </Grid>
 </Window>
