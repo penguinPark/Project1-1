@@ -88,5 +88,10 @@ namespace Project1_1
                 Text1.Text = "ERROR: Area or height may be too large"; // If the rectangle is too big for the main window, this message will show
             }
         }
+
+        private void ComboBoxShape_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBox senderComboBox = (ComboBox)sender;
+        }
     }
 }
