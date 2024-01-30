@@ -7,29 +7,37 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Rectangle x:Name="Rectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="81" Margin="258,18,0,0" 
-                   Stroke="Black" VerticalAlignment="Top" Width="169"/>
+        <Rectangle x:Name="Rectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="51" Margin="258,18,0,0" 
+                   Stroke="Black" VerticalAlignment="Top" Width="59" Visibility="Hidden"/>
         <TextBox x:Name="HeightBox" HorizontalAlignment="Left" Height="23" Margin="111,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" TextChanged="HeightBox_TextChanged" PreviewTextInput="HeightBox_PreviewTextInput"/>
         <Label x:Name="Height" Content="Height:" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Width="72" FontSize="16"/>
-        <Label Content="Area:" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="1.696,0.528"/>
-        <TextBox x:Name="AreaBox" HorizontalAlignment="Left" Height="23" Margin="111,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" TextChanged= "AreaBox_TextChanged" PreviewTextInput="AreaBox_PreviewTextInput"/>
-        <Button x:Name="Button" Content="Button" HorizontalAlignment="Left" Margin="79,341,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <TextBlock x:Name="Text1" HorizontalAlignment="Left" Margin="37,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="17"/>
-        <ComboBox x:Name="ComboBoxShape" HorizontalAlignment="Left" Margin="37,129,0,0" VerticalAlignment="Top" Width="169" Height="21" SelectionChanged="ComboBoxShape_SelectionChanged">
-            <ComboBoxItem Content="Rectangle" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
-            <ComboBoxItem Content="Circle" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
-            <ComboBoxItem Content="Triangle" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
-            <ComboBoxItem Content="Square" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
-            <ComboBoxItem Content="Trapezoid" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
-        </ComboBox>
-        <ComboBox x:Name="ComboBoxColor" HorizontalAlignment="Left" Margin="37,236,0,0" VerticalAlignment="Top" Width="169" Height="21">
-            <ComboBoxItem Content="Yellow" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
-            <ComboBoxItem Content="Red" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
-            <ComboBoxItem Content="Green" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
-            <ComboBoxItem Content="Blue" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
-            <ComboBoxItem Content="Purple" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
-        </ComboBox>
-        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="100" Margin="472,21,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Area:" HorizontalAlignment="Left" Margin="1,168,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="1.696,0.528"/>
+        <TextBox x:Name="AreaBox" HorizontalAlignment="Left" Height="23" Margin="102,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" TextChanged= "AreaBox_TextChanged" PreviewTextInput="AreaBox_PreviewTextInput"/>
+        <Button x:Name="HeightButton" Content="Button" HorizontalAlignment="Left" Margin="83,49,0,0" VerticalAlignment="Top" Width="75" Click="HeightButton_Click"/>
+        <TextBlock x:Name="Text1" HorizontalAlignment="Left" Margin="10,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" Height="72" FontSize="16"/>
+        <Button x:Name="AreaButton2" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="74,204,0,0" Click="AreaButton2_Click"/>
+        <Menu HorizontalAlignment="Left" Height="75" Margin="1,229,0,0" VerticalAlignment="Top" Width="100" FontSize="16">
+            <MenuItem x:Name="Rect" Header="Rectangle" Click="Rect_Click"/>
+            <MenuItem x:Name="Circle" Header="Circle" Click="Circle_Click"/>
+            <MenuItem x:Name="Square" Header="Square" Click="Square_Click" />
+        </Menu>
+        <Ellipse x:Name="Circle1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="60" Stroke="Black" VerticalAlignment="Top" Width="60" Margin="258,10,0,0" Visibility="Hidden"/>
+        <Menu HorizontalAlignment="Left" Height="75" Margin="133,229,0,0" VerticalAlignment="Top" Width="100" FontSize="15">
+            <MenuItem x:Name="Red" Header="Red" Click="Red_Click" />
+            <MenuItem x:Name="Yellow" Header="Yellow" Click="Yellow_Click" />
+            <MenuItem x:Name="Blue" Header="Blue" Click="Blue_Click" />
+            <MenuItem x:Name="Purple" Header="Purple" Click="Purple_Click" />
+            <MenuItem x:Name="Black" Header="Black" Click="Black_Click" />
+            <MenuItem x:Name="Pink" Header="Pink" Click="Pink_Click" />
+        </Menu>
+        <Label Content="Choose a shape and/or color" HorizontalAlignment="Left" Margin="10,302,0,0" VerticalAlignment="Top" FontSize="16" Height="30" Width="232"/>
+        <Label Content="To change the area with the inputted&#xA;height for rectangles and circles&#xD;&#xA;(inputting area for squares will&#xD;&#xA;change the height input):&#xA;" HorizontalAlignment="Left" Margin="0,74,0,0" VerticalAlignment="Top" Height="94" Width="242" FontSize="14"/>
+
+
+
+
+
+
 
 
 
